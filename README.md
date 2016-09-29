@@ -1,6 +1,8 @@
 ### reusableBehaviors
 ###### Angular directives for simple behaviors
 
+***
+
 
 #### Table of Contents
 * [Motivation](#motivation)
