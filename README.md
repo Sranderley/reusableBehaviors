@@ -3,9 +3,9 @@ Tagline
 
 
 ####Table of Contents
-*#####[Motivation](#motivation)
-*#####[Design Paradigm](#design-paradigm)
-*#####[API](#api)
+*[Motivation](#motivation)
+*[Design Paradigm](#design-paradigm)
+*[API](#api)
 
 
 
