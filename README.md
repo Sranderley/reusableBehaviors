@@ -1,6 +1,7 @@
 # reusableBehaviors
 
-#[Thing](#Other-thing)
+##Table of Contents
+#[Thing](#other-thing)
 
 stuff
 
