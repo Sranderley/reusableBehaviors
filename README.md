@@ -12,7 +12,7 @@
 
 
 #### <a name="motivation"></a>Motivation
-reusableBehaviors is an AngularJS module containing directives which isolate and encapsulate interactive behaviors used throughout front end web development. By isolating behaviors in directives, the module is completely agnostic of design choices made by the developer. These directives simply add a behavior to any element, freeing developers from the stylings included in more restrictive front end libraries.
+	reusableBehaviors is an AngularJS module containing directives which isolate and encapsulate interactive behaviors used throughout front end web development. By isolating the behaviors in their own directives, rb is completely agnostic of design choices made by the developer. These directives simply add a behavior to any element, freeing developers from the styling choices included in more restrictive front end libraries.
 
 #### <a name="design-paradigm"></a>Design Paradigm
 
