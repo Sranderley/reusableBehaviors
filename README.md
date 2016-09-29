@@ -1,5 +1,5 @@
 ### reusableBehaviors
-Tagline
+###### Angular directives for simple behaviors
 
 
 #### Table of Contents
