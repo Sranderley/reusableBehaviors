@@ -1,34 +1,16 @@
 # reusableBehaviors
+#### Tagline
 
-##Table of Contents
-#[Thing](#other-thing)
 
-stuff
+###Table of Contents
+####[Motivation](#motivation)
+####[Design Paradigm](#design-paradigm)
+####[API](#api)
 
-stuff
 
-stuff
 
-stuff
+###<a name="motivation"></a>Motivation
 
-stuff
+###<a name="design-paradigm"></a>Design Paradigm
 
-stuff
-
-stuff
-
-stuff
-
-stuff
-
-stuff
-
-stuff
-
-stuff
-
-stuff
-
-stuff
-
-#<a name="other-thing"></a>Other thing
+###<a name="api"></a>API
