@@ -1,6 +1,6 @@
 # reusableBehaviors
 
-#[Thing](Other thing)
+#[Thing](Other-thing)
 
 stuff
 
@@ -30,4 +30,4 @@ stuff
 
 stuff
 
-#Other thing
+<a name="other-thing"></a>#Other thing
