@@ -7,6 +7,7 @@
 * [Design Paradigm](#design-paradigm)
 * [Usage](#usage)
 * [Install](#install)
+* [License](#license)
 
 
 
@@ -51,19 +52,22 @@ function rbToggle(){
 }
 ````
 And this is an example of the rb-toggle directive being used in the DOM
-````
-	<button ng-click="window.toggle()">Click me to open the window!</button>
+````HTML
+<button ng-click="window.toggle()">Click me to open the window!</button>
 
-	<div rb-toggle
-		toggle-api="window"
-		class="window"
-		ng-class="{
-			closed: !window.active,
-			open: window.active
-		}"
-	>
-		<div>Tons of cool stuff!</div>
-	</div>
+<div rb-toggle
+	toggle-api="window"
+	class="window"
+	ng-class="{
+		closed: !window.active,
+		open: window.active
+	}"
+>
+	<div>Tons of cool stuff!</div>
+</div>
 ````
 
 ### <a name="install"></a>Install
+
+### <a name="license"></a>License
+MIT License can be viewed [here](/LICENSE)
