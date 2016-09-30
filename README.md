@@ -23,7 +23,7 @@ reusableBehaviors is an AngularJS module containing directives which isolate and
 
 ### <a name="usage"></a>Usage
 ####Example
-````
+````javascript
 angular
 	.module('reusableBehaviors')
 	.directive('rbToggle', rbToggle);
