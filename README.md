@@ -16,10 +16,10 @@ reusableBehaviors is an AngularJS module containing directives which isolate and
 
 ### <a name="design-paradigm"></a>Design Paradigm
 * Directives are named in the typical angular fashion, beginning with a two-character mnemonic, followed by a single word which is descriptive of the behavior that the directive provides. (e.g. rb-toggle, rb-relay)
-* Each directive exposes its API to the DOM using an attribute called "[behavior]-api". (e.g. toggle-api, relay-api)
-* APIs include both properties and methods, see the [demo page](https://sranderley.github.io) to the directives along with their markup
-* Some of the directives rely on additional attributes for configuration, see the [demo page](https://sranderley.github.io) for details about each directive
-* Some directives depend on services
+* Each directive exposes its API to the DOM using an attribute called [behavior]-api. (e.g. toggle-api, relay-api)
+* APIs include both properties and methods, see the [demo page](https://sranderley.github.io) to view the directives along with their markup
+* Some of the directives rely on additional attributes for configuration, see the [demo page](https://sranderley.github.io) for more details
+* Some directives depend on services, please just go to the [demo page](https://sranderley.github.io) already
 
 ### <a name="api"></a>API
 
