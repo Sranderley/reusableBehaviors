@@ -9,8 +9,6 @@
 * [Install](#install)
 * [License](#license)
 
-
-
 ### <a name="motivation"></a>Motivation
 reusableBehaviors is an AngularJS module containing directives which isolate and encapsulate interactive behaviors used throughout front end web development. By isolating the behaviors in their own directives, rb is completely agnostic of design choices made by the developer. These directives simply add a behavior to any element, freeing developers from the styling choices included in more restrictive front end libraries.
 
@@ -53,10 +51,15 @@ function rbToggle(){
 ````
 And this is an example of the rb-toggle directive being used in the DOM
 ````HTML
-<button ng-click="window.toggle()">Click me to open the window!</button>
-
-<div rb-toggle
+<button
+	rb-toggle
 	toggle-api="window"
+	ng-click="window.toggle()"
+>
+	Click me to open the window!
+</button>
+
+<div
 	class="window"
 	ng-class="{
 		closed: !window.active,
@@ -66,7 +69,7 @@ And this is an example of the rb-toggle directive being used in the DOM
 	<div>The Great Outdoors</div>
 </div>
 ````
-In this example, the directive is instantiated on the div and its API is defined as "window". This API is then used by the `<button>` element, which invokes the directive's toggle method whenever it is clicked. The result of invoking the toggle method is that the boolean `window.active` changes its state.
+In this example, the directive is instantiated on the button and its API is defined as "window". This API is then used by the `<button>` element, which invokes the directive's toggle method whenever it is clicked. The result of invoking the toggle method is that the boolean `window.active` changes its state.
 
 The following CSS applies a transition whenever `window.toggle` is invoked.
 ````CSS
