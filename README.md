@@ -2,10 +2,9 @@
 ###### Angular directives for simple behaviors
 ***
 
-#### Table of Contents
+### Table of Contents
 * [Motivation](#motivation)
 * [Design Paradigm](#design-paradigm)
-* [API](#api)
 * [Usage](#usage)
 * [Install](#install)
 
@@ -22,7 +21,11 @@ reusableBehaviors is an AngularJS module containing directives which isolate and
 * Some directives depend on services, please just go to the [demo page](https://sranderley.github.io) already
 
 ### <a name="usage"></a>Usage
+These directives are meant for use with the ng-class directive and a strong knowledge of CSS and CSS transitions. They can be used to provide behaviors to standalone elements, or they can be wrapped up inside of other directives with styles already applied, providing behavior to the contents of the container directive.
+
 ####Example
+
+This is the source code for the rb-toggle directive.
 ````javascript
 angular
 	.module('reusableBehaviors')
@@ -46,6 +49,21 @@ function rbToggle(){
 		}
 	}
 }
+````
+And this is an example of the rb-toggle directive being used in the DOM
+````
+	<button ng-click="window.toggle()">Click me to open the window!</button>
+
+	<div rb-toggle
+		toggle-api="window"
+		class="window"
+		ng-class="{
+			closed: !window.active,
+			open: window.active
+		}"
+	>
+		<div>Tons of cool stuff!</div>
+	</div>
 ````
 
 ### <a name="install"></a>Install
