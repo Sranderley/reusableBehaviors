@@ -66,6 +66,22 @@ And this is an example of the rb-toggle directive being used in the DOM
 	<div>Tons of cool stuff!</div>
 </div>
 ````
+In this example, the directive is instantiated on the div and its API is defined as "window". This API is then used by the `<button>` element, which invokes the directive's toggle method whenever it is clicked. The result of invoking the toggle method is that the boolean `window.active` changes its state. The following CSS would apply a transition whenever `window.toggle` is invoked.
+````CSS
+.window {
+	width: 100%
+	background: #B4D455
+	transition: height 0.1s
+}
+
+.window.closed {
+	height: 0;
+}
+
+.window.open {
+	height: 100%
+}
+````
 
 ### <a name="install"></a>Install
 
