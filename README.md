@@ -21,8 +21,31 @@ reusableBehaviors is an AngularJS module containing directives which isolate and
 * Some of the directives rely on additional attributes for configuration, see the [demo page](https://sranderley.github.io) for more details
 * Some directives depend on services, please just go to the [demo page](https://sranderley.github.io) already
 
-### <a name="api"></a>API
-
 ### <a name="usage"></a>Usage
+####Example
+````
+angular
+	.module('reusableBehaviors')
+	.directive('rbToggle', rbToggle);
+
+function rbToggle(){
+	return {
+		restrict: 'A',
+		scope: {
+			toggleApi: '='
+		},
+		link: function(scope, elem, attr){
+			scope.toggleApi = {
+				active: false,
+				toggle: toggle
+			};
+
+			function toggle(){
+				scope.toggleApi.active = !scope.toggleApi.active;
+			}
+		}
+	}
+}
+````
 
 ### <a name="install"></a>Install
