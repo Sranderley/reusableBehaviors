@@ -22,7 +22,7 @@ reusableBehaviors is an AngularJS module containing directives which isolate and
 * Some directives depend on services, please just go to the [demo page](https://sranderley.github.io) already
 
 ### <a name="usage"></a>Usage
-These directives are meant for use with the ng-class directive and a strong knowledge of CSS and CSS transitions. They can be used to provide behaviors to standalone elements, or they can be wrapped up inside of other directives with styles already applied, providing behavior to the contents of the container directive.
+These directives are meant for use with the ng-class directive and a strong knowledge of CSS and CSS transitions. They can be used to provide behaviors to standalone elements, or they can be invoked inside of other directives with styles already applied, providing behavior to the contents of the container directive.
 
 ####Example
 
@@ -63,14 +63,16 @@ And this is an example of the rb-toggle directive being used in the DOM
 		open: window.active
 	}"
 >
-	<div>Tons of cool stuff!</div>
+	<div>The Great Outdoors</div>
 </div>
 ````
-In this example, the directive is instantiated on the div and its API is defined as "window". This API is then used by the `<button>` element, which invokes the directive's toggle method whenever it is clicked. The result of invoking the toggle method is that the boolean `window.active` changes its state. The following CSS would apply a transition whenever `window.toggle` is invoked.
+In this example, the directive is instantiated on the div and its API is defined as "window". This API is then used by the `<button>` element, which invokes the directive's toggle method whenever it is clicked. The result of invoking the toggle method is that the boolean `window.active` changes its state.
+
+The following CSS applies a transition whenever `window.toggle` is invoked.
 ````CSS
 .window {
 	width: 100%
-	background: #B4D455
+	background-color: #B4D455
 	transition: height 0.1s
 }
 
@@ -84,6 +86,13 @@ In this example, the directive is instantiated on the div and its API is defined
 ````
 
 ### <a name="install"></a>Install
+Installation is very simple.
+* Include the rb.js file in your project directory
+* Inside of your index.html, include a `<script>` tag which points to rb.js
+* In the declarration of your angular app, pass 'reusable-behaviors' as a dependency like:
+````javascript
+angular.module('myApp', ['reusable-behaviors']);
+````
 
 ### <a name="license"></a>License
 MIT License can be viewed [here](/LICENSE)
