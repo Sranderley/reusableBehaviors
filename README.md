@@ -89,7 +89,7 @@ The following CSS applies a transition whenever `window.toggle` is invoked.
 Installation is very simple.
 * Include the rb.js file in your project directory
 * Inside of your index.html, include a `<script>` tag which points to rb.js
-* In the declarration of your angular app, pass 'reusable-behaviors' as a dependency like:
+* In the declarration of your angular app, pass 'reusable-behaviors' as a dependency, like:
 ````javascript
 angular.module('myApp', ['reusable-behaviors']);
 ````
