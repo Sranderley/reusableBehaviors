@@ -14,7 +14,7 @@
 reusableBehaviors is an AngularJS module containing directives which isolate and encapsulate interactive behaviors used throughout front end web development. By isolating each behavior in its own directive, rb is completely agnostic of design choices made by the developer. These directives simply add a behavior to any element, freeing developers from the styling choices included in more restrictive front end libraries.
 
 ### <a name="behaviors"></a>Behaviors
-* Toggle - Exactly what you'd expect
+* [Toggle](https://sranderley.github.io/demos/rb-toggle) - Exactly what you'd expect
 * Relay - This is similar to a toggle, but relays are grouped and only one member of each group can be 'active' at a time
 *
 
