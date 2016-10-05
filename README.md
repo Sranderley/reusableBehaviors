@@ -93,12 +93,13 @@ The following CSS applies a transition whenever `window.toggle` is invoked.
 	height: 100%
 }
 ````
+The rest of the directives follow a very similar usage pattern. They expose an API to the current scope of the DOM, which is used to access the behaviors that the directive provides. Check out the [demos page](https://sranderley.github.io) to see working examples along with the code that links everything together.
 
 ### <a name="install"></a>Install
 Installation is very simple.
 * Include rb.js or rb.min.js file in your project directory
 * Inside of your index.html, include a `<script>` tag which points to rb.js or rb.min.js
-* In the declarration of your angular app, pass 'reusable-behaviors' as a dependancy, like:
+* In the declarration of your angular app, pass 'reusable-behaviors' as a dependency, like:
 ````javascript
 angular.module('myApp', ['reusable-behaviors']);
 ````
