@@ -33,23 +33,24 @@ These directives are meant for use with the ng-class directive and a strong know
 This is the source code for the rb-toggle directive.
 ````javascript
 angular
-	.module('reusableBehaviors')
-	.directive('rbToggle', rbToggle);
+	.module( 'reusableBehaviors' )
+	.directive( 'rbToggle', rbToggle );
 
-function rbToggle(){
+function rbToggle () {
 	return {
 		restrict: 'A',
 		scope: {
-			toggleApi: '='
+			toggleApi: '=',
+			disabled: '=?'
 		},
-		link: function(scope, elem, attr){
+		link: function( scope, elem, attr ){
 			scope.toggleApi = {
 				active: false,
 				toggle: toggle
 			};
 
-			function toggle(){
-				scope.toggleApi.active = attr.disabled === 'true' ? scope.toggleApi.active : !scope.toggleApi.active;
+			function toggle () {
+				scope.toggleApi.active = scope.disabled ? scope.toggleApi.active : !scope.toggleApi.active;
 			}
 		}
 	}
@@ -60,8 +61,7 @@ And this is an example of the rb-toggle directive being used in the DOM
 <button
 	rb-toggle
 	toggle-api="window"
-	ng-click="window.toggle()"
->
+	ng-click="window.toggle()">
 	Click me to open the window!
 </button>
 
@@ -70,8 +70,7 @@ And this is an example of the rb-toggle directive being used in the DOM
 	ng-class="{
 		closed: !window.active,
 		open: window.active
-	}"
->
+	}">
 	<div>The Great Outdoors</div>
 </div>
 ````
@@ -101,7 +100,7 @@ Installation is very simple.
 * Inside of your index.html, include a `<script>` tag which points to rb.js or rb.min.js
 * In the declarration of your angular app, pass 'reusable-behaviors' as a dependency, like:
 ````javascript
-angular.module('myApp', ['reusable-behaviors']);
+angular.module('myApp', [ 'reusableBehaviors' ]);
 ````
 
 ### <a name="license"></a>License
