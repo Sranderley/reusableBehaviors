@@ -26,7 +26,7 @@ reusableBehaviors is an AngularJS module containing directives which isolate and
 * Some directives depend on services, please just go to the [demos page](https://sranderley.github.io) already
 
 ### <a name="usage"></a>Usage
-These directives are meant for use with the ng-class directive and a strong knowledge of CSS and CSS transitions. They can be used to provide behaviors to standalone elements, or they can be invoked inside of other directives with styles already applied, providing behavior to the contents of the container directive.
+These directives are meant for use with Angular's native ng-class and ng-show directives, as well as a strong knowledge of CSS and CSS transitions. Each directive can be used to provide behaviors to standalone elements in the DOM, or within templates of other directives, providing behaviors to the elements in the container directive.
 
 ####Example
 
@@ -98,7 +98,7 @@ The rest of the directives follow a very similar usage pattern. They expose an A
 Installation is very simple.
 * Include rb.js or rb.min.js file in your project directory
 * Inside of your index.html, include a `<script>` tag which points to rb.js or rb.min.js
-* In the declarration of your angular app, pass 'reusable-behaviors' as a dependency, like:
+* In the declarration of your angular app, pass 'reusableBehaviors' as a dependency, like:
 ````javascript
 angular.module('myApp', [ 'reusableBehaviors' ]);
 ````
