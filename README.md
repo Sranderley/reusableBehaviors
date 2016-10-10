@@ -14,8 +14,8 @@
 reusableBehaviors is an AngularJS module containing directives which isolate and encapsulate interactive behaviors used throughout front end web development. By isolating each behavior in its own directive, rb is completely agnostic of design choices made by the developer. These directives simply add a behavior to any element, freeing developers from the styling choices included in more restrictive front end libraries.
 
 ### <a name="behaviors"></a>Behaviors
-* [Toggle](https://sranderley.github.io/#/demos/rbToggle) - Exactly what you'd expect
-* [Relay](https://sranderley.github.io/#/demos/rbRelay) - This is similar to a toggle, but relays are grouped and only one member of each group can be 'active' at a time
+* [Toggle](https://sranderley.github.io/#/demos/rb-toggle) - Exactly what you'd expect
+* [Relay](https://sranderley.github.io/#/demos/rb-relay) - This is similar to a toggle, but relays are grouped and only one member of each group can be 'active' at a time
 *
 
 ### <a name="design-paradigm"></a>Design Paradigm
@@ -98,7 +98,7 @@ The rest of the directives follow a very similar usage pattern. They expose an A
 Installation is very simple.
 * Include rb.js or rb.min.js file in your project directory
 * Inside of your index.html, include a `<script>` tag which points to rb.js or rb.min.js
-* In the declarration of your angular app, pass 'reusableBehaviors' as a dependency, like:
+* In the declaration of your angular app, pass 'reusableBehaviors' as a dependency, like:
 ````javascript
 angular.module('myApp', [ 'reusableBehaviors' ]);
 ````
